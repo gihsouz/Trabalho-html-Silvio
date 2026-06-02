@@ -1,0 +1,97 @@
+body {
+  margin: 0;
+  min-height: 100vh;
+  background-color: #e9f2e5;
+  font-family: Arial, sans-serif;
+}
+
+.pagina {
+  min-height: 100vh;
+  display: grid;
+  grid-template-rows: 60px 1fr;
+  grid-template-areas:
+    "cabecalho"
+    "conteudo";
+}
+
+.cabecalho {
+  grid-area: cabecalho;
+  background-color: #fff8ea;
+  display: flex;
+  align-items: center;
+  padding: 0 12px;
+}
+
+.botao-voltar {
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.conteudo {
+  grid-area: conteudo;
+  width: min(1100px, 92%);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.2fr 0.8fr;
+  grid-template-areas: "apresentacao cadastro";
+  gap: 40px;
+  align-items: center;
+  padding: 40px 0;
+}
+
+.apresentacao {
+  grid-area: apresentacao;
+  text-align: center;
+}
+
+.apresentacaotitulo {
+  margin: 0 0 16px;
+  font-size: clamp(28px, 4vw, 38px);
+  color: rgb(99, 74, 124);
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.apresentacaotexto {
+  margin: 0;
+  font-size: 18px;
+  color: cadetblue;
+  font-family: "Manrope", sans-serif;
+}
+
+.cadastro {
+  grid-area: cadastro;
+  display: grid;
+  gap: 16px;
+  justify-items: stretch;
+}
+
+.cadastrotitulo {
+  margin: 0;
+  font-size: 32px;
+  font-family: "Space Grotesk", sans-serif;
+}
+
+.formulario {
+  display: grid;
+  gap: 12px;
+}
+
+.formulario__campo,
+.formulario__botao {
+  height: 45px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.formulario__campo {
+  padding: 0 12px;
+}
+
+.formulario__botao {
+  cursor: pointer;
+  color: rgb(96, 22, 96);
+  background-color: #f1e6ff;
+}

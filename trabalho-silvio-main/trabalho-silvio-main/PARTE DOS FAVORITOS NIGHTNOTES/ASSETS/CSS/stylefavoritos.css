@@ -1,0 +1,340 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Space Grotesk', 'Manrope', sans-serif;
+}
+
+body {
+    background-color: #0f4740; 
+    color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+
+.app-container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    background-color: #f5f5f5; 
+    border-radius: 24px;
+    padding: 40px;
+    gap: 60px; 
+    box-shadow: 0 10px 30px rgb(49, 9, 83);
+}
+
+
+.sidebar {
+    flex: 1.2; 
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    min-width: 0;
+}
+
+
+.search-bar {
+    display: flex;
+    align-items: center;
+    background-color: #e2e2e2;
+    border: 1px solid #b5b5b5;
+    padding: 12px 20px;
+    border-radius: 100px; 
+    gap: 21px;
+}
+
+.search-bar i {
+    color: #555;
+    font-size: 1.1rem;
+}
+
+.search-bar input {
+    border: none;
+    background: transparent;
+    outline: none;
+    width: 100%;
+    font-size: 0.95rem;
+    color: #333;
+}
+
+
+.music-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.music-item {
+    display: flex;
+    align-items: center;
+    gap: 17px;
+}
+
+
+.capas-musicas {
+    width: 65px;
+    height: 65px;
+    background-color: #cccccc;
+    border: 2px solid #999;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #555;
+    overflow: hidden;
+    margin-bottom: 2px;
+    flex-shrink: 0;
+
+}
+    .capas-musicas img{
+width:100% ;
+height:100% ;
+object-fit: cover;
+}
+
+.music-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.music-info h3 {
+    font-size: 1.05rem;
+    font-weight: 600;
+    margin-bottom: 4px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music-info p {
+    font-size: 0.85rem;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.music-actions {
+    margin-left: auto;
+    flex-shrink: 0;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    font-size: 1.1rem;
+    color: #444;
+    cursor: pointer;
+}
+
+
+.player-bar {
+    margin-top: auto; 
+    background-color: #dbdbdb;
+    border: 1px solid #adadad;
+    border-radius: 50px;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-width: 0;
+    margin-bottom: 10px;
+}
+
+.player-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+
+.foto-da-musica-tocando {
+    width: 28px;
+    height: 28px;
+    background-color: #999;
+    border-radius: 50%;
+    overflow: hidden;
+    flex-shrink: 0;
+}
+
+.foto-da-musica-tocando img{
+width: 100%;
+height: 100%;
+object-fit: cover;
+
+}
+
+.player-controls {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex: 1;
+    justify-content: flex-end;
+}
+
+.playback-buttons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}
+
+.play-btn {
+    font-size: 1.5rem;
+}
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 50%;
+}
+
+.progress-bar {
+    flex: 1;
+    height: 6px;
+    background-color: #b5b5b5;
+    border-radius: 3px;
+    position: relative;
+}
+
+.progress-current {
+    width: 40%;
+    height: 100%;
+    background-color: #555;
+    border-radius: 3px;
+}
+
+.time {
+    font-size: 0.8rem;
+    font-weight: 500;
+}
+
+
+.main-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    text-align: center;
+    min-width: 0;
+}
+
+
+.app-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    align-self: flex-end; 
+    margin-bottom: 40px;
+}
+
+.app-header h1 {
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+
+.featured-artist-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.featured-artist-section h2 {
+    font-size: 1.35rem;
+    font-weight: 600;
+    color:#111111;
+    margin-bottom: 30px;
+}
+
+.logo-placeholder{
+width: 60px;
+height: 60px;
+display: flex;
+align-items: center;
+justify-content: center;
+overflow: hidden;
+border-radius: 50% ;
+
+}
+    
+.logo-img{
+width:100%;
+height:100%;
+display: block;
+object-fit:cover ;
+}
+
+.foto-do-artista-mais-ouvido {
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #999;
+    margin-bottom: 25px;
+    box-shadow: inset 0 0 10px rgba(0,0,0,0.05);
+    flex-shrink: 0;
+}
+
+.foto-do-artista-mais-ouvido img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.artist-name {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 15px;
+    letter-spacing: 1px;
+}
+
+.artist-stats {
+    font-size: 1.15rem;
+    font-weight: 600;
+    color: #444;
+    margin-bottom: 40px;
+}
+
+
+.action-buttons {
+    display: flex;
+    gap: 20px;
+    width: 100%;
+    justify-content: center;
+}
+
+button {
+    padding: 12px 24px;
+    border-radius: 50px;
+    font-size: 0.9rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s ease;
+    border: 1px solid #adadad;
+}
+
+.btn-secondary {
+    background-color: #dbdbdb;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #e5e5e5;
+    color: #000;
+    font-weight: 700;
+}
+
+
+button:hover {
+    filter: brightness(0.9);
+    transform: scale(1.02);
+}
